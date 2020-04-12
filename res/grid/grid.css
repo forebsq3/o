@@ -1,0 +1,40 @@
+
+.alsoColumn {
+    float: left;
+    width: 31%;
+    padding: 4px;
+    position: relative;
+  }
+  
+  /* Style the images inside the grid */
+.alsoColumn img {
+    filter: brightness(70%);
+    cursor: pointer; 
+    transition: filter 0.3s, visibility 0s linear 0.3s;
+  }
+  
+  .alsoColumn img:hover {
+    filter: brightness(100%);
+    opacity: 1;
+    transition-delay: 0s;
+
+  }
+  
+  /* Clear floats after the columns */
+.alsoRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.alsoText {
+    position: absolute;
+    color: #ffffff;
+    height: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: "Georgia";
+    margin: 3px auto
+  }
